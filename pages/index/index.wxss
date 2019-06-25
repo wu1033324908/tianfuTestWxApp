@@ -1,0 +1,264 @@
+page{
+  padding: 0;
+  margin: 0;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/index/bg_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-style: normal;
+  color: #fff;
+}
+/* .getUse{
+  position: absolute;
+  top: 60%;
+  width: 0;
+  height: 0;
+} */
+/* 清除浮动 */
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+.main_top{
+  width: 689rpx;
+  margin: auto;
+  height: 275rpx;
+  margin-bottom: 58rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/index/Roundrect_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-style: normal;
+  color: #fff;
+}
+.userinfo{
+  position: relative;
+}
+.userinfo-avatar{
+  border-radius: 50%;
+  width: 140rpx;
+  height: 140rpx;
+  margin-left: 42rpx;
+  margin-top: 40rpx;
+}
+.Announcement{
+  width: 80%;
+  margin-left: 50rpx;
+  font-size: 18rpx;
+  height: 40rpx;
+}
+.Announcement image{
+  width: 30rpx;
+  margin-top: 15rpx;
+  margin-right: 15rpx;
+}
+.Announcement text{
+  display: block;
+  float: right;
+  margin-top: 18rpx;
+  margin-right: 230rpx;
+}
+.userinfo-nickname{
+  font-size: 26rpx;
+  position: absolute;
+  font-weight: 600;
+  left:210rpx;
+  top: 80rpx;
+}
+.userinfo button{
+  margin: auto 60rpx;
+  background: #0D8CF2;
+}
+.userinfo-QR-code{
+  width: 66rpx;
+  height: 66rpx;
+  position: absolute;
+  right:40rpx;
+  top: 35rpx;
+}
+.userinfo-gexing{
+  font-size: 22rpx;
+  position: absolute;
+  font-weight: 400;
+  left:210rpx;
+  top: 130rpx;
+}
+.main_body{
+  margin: auto 58rpx;
+  width: 686rpx;
+}
+.main_body_left{
+  float: left;
+  width: 370rpx;
+  margin: 0 18rpx;
+}
+.main_body_left view{
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+.main_body_left_item1{
+  height: 360rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/index/047.png);
+  background-size: cover;
+  
+}
+.main_body_left_item2{
+  height: 330rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/index/bg_3.png);
+  background-size: cover;
+  margin-top: 30rpx;
+  background-position-x: -3rpx;
+  position: relative;
+}
+.p{
+  margin:0rpx 32rpx 13rpx 32rpx;
+  padding-top: 20rpx;
+  font-size: 28rpx;
+  font-weight: 600
+}
+.span{
+  margin-left: 32rpx;
+  font-size: 18rpx;
+}
+.main_body_right{
+  width: 264rpx;
+  float: left;
+}
+.main_body_right_item1{
+  width: 100%;
+  height: 395rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/index/bg_4.png);
+  background-size: cover;
+}
+.main_body_right_item2{
+  width: 100%;
+  height: 296rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/index/bg_1.png);
+  background-size: cover;
+  background-position-x: -3rpx;
+  margin-top: 30rpx;
+  position: relative;
+}
+.number{
+  font-size: 18rpx;
+  color: white;
+  position: absolute;
+  right: 10rpx;
+  bottom:10rpx;
+
+}
+.getUserInfo{
+  width: 550rpx;
+  margin: auto;
+  position: absolute;
+  left: 100rpx;
+  top: 250rpx;
+  z-index: 999;
+  background: #FFF;
+  color: #000;
+  border-radius: 8rpx;
+}
+.getUserInfo image{
+  width: 110rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  float: left;
+  margin-left: 30rpx;
+}
+.getUserInfo text{
+  display: block;
+  float: left;
+  width: 330rpx;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  letter-spacing: 1rpx;
+  font-weight: 550;
+  margin-left: 10rpx;
+}
+.title{
+  font-size: 40rpx;
+  font-weight: 550;
+  padding: 45rpx;
+}
+.login{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+.infoMessage{
+  width: 455rpx;
+  height: 1rpx;
+  border-top: solid 1rpx #AAAA;
+  margin: auto
+}
+.infoMessage_point{
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #AAA;
+  border-radius: 50%;
+  position: absolute;
+  left: 35rpx;
+  top: 80rpx;
+}
+.infoMessage_text{
+  width: 420rpx;
+  height: 80rpx;
+  font-size: 35rpx;
+  color: #AAA;
+  text-align: left;
+   position: absolute;
+  left: 80rpx;
+  top: 40rpx;
+}
+.infoMessage_button{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-bottom: 30rpx; 
+  text-align: right;
+}
+.infoMessage_button_reject{
+  float: right;
+  font-size: 35rpx;
+  color: #8A8A8A;
+  margin-right: 60rpx;
+}
+.infoMessage_button_allow{
+  float: right;
+  font-size: 35rpx;
+  color: #1CAE1B;
+  margin-right: 60rpx;
+  background: #FFF;
+  border: #FFF solid;
+}
+
+
+.X_main_body_left_item1{
+  height: 440rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/iphoneX/4.png);
+  background-size: cover;
+  
+}
+.X_main_body_left_item2{
+  height: 474rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/iphoneX/2.png);
+  background-size: cover;
+  margin-top: 30rpx;
+  background-position-x: -3rpx;
+  position: relative;
+}
+.X_main_body_right_item1{
+  width: 100%;
+  height: 410rpx;
+  margin-top: 5rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/iphoneX/1.png);
+  background-size: cover;
+}
+.X_main_body_right_item2{
+  width: 100%;
+  height: 500rpx;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/iphoneX/3.png);
+  background-size: cover;
+  margin-top: 30rpx;
+  position: relative;
+}

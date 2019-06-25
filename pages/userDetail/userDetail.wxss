@@ -1,0 +1,78 @@
+/* pages/userDetail/userDetail.wxss */
+page{
+  padding: 0;
+  margin: 0;
+  background: #F6F6F6;
+  font-style: normal;
+  color: #808080;
+}
+
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+.userInfo{
+  height: 180rpx;
+  width: 100%;
+  color: #FFF;
+  background: #0D8CF2;
+}
+.userinfo-avatar{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.userInfo-text{
+  float: left;
+  width: 50%;
+  margin-left: 35rpx;
+  margin-top: 30rpx;
+}
+.userinfo-nickname{
+  padding-top: 15rpx;
+  font-size: 35rpx;
+  margin-bottom: 20rpx;
+}
+.userinfo-city{
+  font-size: 28rpx;
+  margin-bottom: 35rpx;
+}
+.userinfo_detail{
+  width: 100%;
+  margin-top: 18rpx;
+}
+.detail_item{
+  height: 90rpx;
+  width: 100%;
+  font-size: 28rpx;
+  margin-bottom: 2rpx;
+  color:#808080;
+  line-height: 90rpx;
+  background: #FFF;
+}
+.detail_item image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 32rpx;
+}
+.detail_item text:nth-child(4){
+  color: #b2b2b2;
+  float: right;
+  vertical-align: middle;
+  display : table-cell;
+}
+.detail_item image:nth-child(3){
+  float: right;
+  position: relative;
+  top: 31rpx;
+}
+.exit{
+  color: #000;
+  font-size: 30rpx;
+  height: 90rpx;
+  margin-top: 16rpx;
+  text-align: center;
+  line-height: 90rpx;
+  background: #FFF;
+}

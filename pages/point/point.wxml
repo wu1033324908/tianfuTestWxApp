@@ -1,0 +1,74 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="main_body">
+<!-- 微信头像 -->
+  <view class="userInfo">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class="userinfo-nickname">成绩录入</view>
+    </view>
+  </view>
+  <view class="main_body_background">
+  </view>
+  <view class="main_body-form clearfloat">
+    <form bindsubmit="formsubmit">
+    <view class="main_info" bindtap='islogin'>
+      <view class="info_item clearfloat">
+        <picker bindchange="bindPickerChange" value="{{fi_index}}"  range="{{array}}">
+          <view class="picker" style="color:{{fichoose}}">
+            {{array[fi_index]}}
+          </view>
+        </picker>
+        <!-- <input name="Run" placeholder='10×4折返跑' bindfocus='islogin'></input> -->
+        <!-- <image  src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+      <view class="info_item clearfloat">
+        <!-- <input name="SitUps" placeholder='1分钟仰卧起坐' bindfocus='islogin'></input> -->
+        <picker bindchange="bindPickerChange_2"  value="{{se_index}}" range="{{array_2}}">
+          <view class="picker" style="color:{{sechoose}}">
+            {{array_2[se_index]}}
+          </view>
+        </picker>
+        <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+      <view class="info_item clearfloat">
+      <picker bindchange="bindPickerChange_3"  value="{{tr_index}}" range="{{array3}}">
+          <view class="picker" style="color:{{trchoose}}">
+            {{array3[tr_index]}}
+          </view>
+        </picker>
+        <!-- <input name="RopeSkipping" placeholder='1分钟跳绳' bindfocus='islogin'></input> -->
+        <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+      <view class="info_item clearfloat">
+      <picker bindchange="bindPickerChange_4"  value="{{fo_index}}" range="{{array4}}">
+          <view class="picker" style="color:{{fochoose}}">
+            {{array4[fo_index]}}
+          </view>
+        </picker>
+        <!-- <input name="SittingBodyFlexion" placeholder='坐位体前屈' bindfocus='islogin'></input> -->
+        <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+      <view class="info_item clearfloat">
+        <!-- <input name="VitalCapacity" placeholder='肺活量' bindfocus='islogin'></input> -->
+        <view class="picker">
+            <picker bindchange="bindPickerChange_5" value="{{fiv_index}}" range="{{array5}}">
+              <view class="picker" style="color:{{fivchoose}}">
+                {{array5[fiv_index]}}
+              </view>
+            </picker>
+          </view>
+        <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+    </view>
+    <button class="submit" formType="submit">提交</button>
+    </form>
+    
+  </view>
+
+  <view style='position:fixed;left:230rpx;top:430rpx;z-index:999;border-radius:40rpx;overflow:hidden' hidden='{{isHide}}'>
+  <view class="loading" style='border-radius:40rpx;opcity:0.2'>
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/loading.gif" style='opcity:0.6'>
+    </image>
+    <text>是不是某项成绩忘记输入了</text>
+  </view>
+</view>
+

@@ -1,0 +1,64 @@
+/* pages/Instructions/Instructions.wxss */
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+page{
+  padding: 0;
+  margin: 0;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/useMessage/bg_3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-style: normal;
+  text-align: left;
+  color: #000;
+}
+.main_body{
+  height: 900rpx;
+  width: 100%;
+  margin-top: 58rpx;
+  margin: auto;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfodetail.png);
+  background-size: cover;
+  position: relative;
+}
+.h3{
+  padding-left: 60rpx;
+  padding-top: 44rpx;
+}
+.container{
+  font-size: 25rpx;
+  width: 686rpx;
+  margin: auto;
+  padding: 20rpx;
+  padding-left: 25rpx;
+  padding-top: 0;
+}
+.p{
+  margin-left: 0;
+  line-height: 40rpx;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 46rpx;
+}
+.main_body_footer{
+  width: 100%;
+  height: 350rpx;
+  position: absolute;
+  bottom: 0;
+}
+.main_body_footer_right{
+  width: 464rpx;
+  height: 100%;
+  float: right;
+  margin-right: 50rpx;
+}
+.main_body_footer_right .p{
+  margin-top: 0;
+}
+.more{
+  position: absolute;
+  bottom: 100rpx;
+  width: 300rpx;
+  height: 80rpx;
+  right: 55rpx;
+  color: #0D8CF2
+}

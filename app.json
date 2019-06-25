@@ -1,0 +1,21 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/newPoint/newPoint",
+        "pages/logs/logs",
+        "pages/userinfo/userinfo",
+        "pages/Instructions/Instructions",
+        "pages/point/point",
+        "pages/mainInfo/mainInfo",
+        "pages/userDetail/userDetail",
+        "pages/hisPoint/hisPoint"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0D8CF2",
+        "navigationBarTitleText": "发现你的运动天赋",
+        "navigationBarTextStyle": "white"
+    },
+    "sitemapLocation": "sitemap.json"
+}

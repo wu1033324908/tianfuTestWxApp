@@ -1,0 +1,45 @@
+<!--pages/userDetail/userDetail.wxml-->
+<view class="userInfo clearfloat">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  <view class="userInfo-text">
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    <!-- <view class="userinfo-city">{{userInfo.province}} \t{{userInfo.city}}</view> -->
+  </view> 
+</view>
+<view class="userinfo_detail">
+  <view class="detail_item">
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/xm.png"></image>
+    <text>姓名</text>
+     <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/right.png"></image>  
+    <text>{{userMessage.Name}}</text>
+   
+  </view>
+  <view class="detail_item">
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/nn.png"></image>
+    <text>年龄</text>
+    
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/right.png"></image> 
+    <text>{{userMessage.Age}}</text> 
+  </view>
+  <view class="detail_item">
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/nj.png"></image>
+    <text>年级</text>
+    
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/right.png"></image>  
+    <text>{{userMessage.Grade}}</text>
+  </view>
+  <view class="detail_item">
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/sg.png"></image>
+    <text>身高</text>
+    
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/right.png"></image>  
+    <text>{{userMessage.Height}}</text>
+  </view>
+  <view class="detail_item">
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/tz.png"></image>
+    <text>体重</text>
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/userinfo/right.png"></image> 
+    <text>{{userMessage.Weight}}</text> 
+  </view>
+</view>
+<view class="exit" bindtap='exit'>退出账号</view>

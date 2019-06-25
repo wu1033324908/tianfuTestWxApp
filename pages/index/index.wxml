@@ -1,0 +1,163 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view class="container" bindgetuserinfo="getUserInfo">
+<!-- 第一部分的内容 -->
+  <view class="main_top" style="margin-top:40rpx;">
+    <view class="userinfo">
+     <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="getUse" style="color:#FFF;top:200rpx;margin:auto;padding:20rpx;border-radius:30rpx;font-size:35rpx"> 获取个人信息</button> 
+      <block wx:else> -->
+      <!-- <block>  -->
+        <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <!-- <open-data type="userNickname" lang="zh_CN" class="userinfo-nickname"></open-data> -->
+        <input bindinput='changName' class="userinfo-gexing" value='{{user_name}}'></input>
+        <!-- 个性签名 -->
+      <!-- </block> -->
+      <image class="userinfo-QR-code" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/index/QR_Code.png" mode="cover"></image>
+    </view>
+    <view class="Announcement">
+      <image mode="widthFix" src="{{pngSrc}}"></image>
+      <text style="overflow:hidden; position:relative;left:-450rpx;margin-right:0">公告：</text>
+      <view style="overflow:hidden; position:relative;top:-45rpx;left:100rpx;margin-right:0;width:220rpx;height:50rpx">
+        <text style="position:absolute;left:{{positionNum}}rpx;width:300rpx">欢迎来到运动天赋发觉之旅</text>
+      </view>
+      
+    </view>
+  </view>
+
+  <!-- ipnone 适配 -->
+  <view wx:if ="{{isIpnone}}" class="main_body clearfloat">
+    <view class="main_body_left">
+      <!--  -->
+      <navigator url="{{navigator_page}}">
+        <view class="X_main_body_left_item1">
+          <view class="p">
+          个人资料
+          </view>
+          <view class="span">
+          了解自己的身体数据
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../newPoint/newPoint">
+        <view class="X_main_body_left_item2"style="padding-top:10rpx">
+          <view class="p">
+          六角星战士
+          </view>
+          <view class="span">
+          发现你的运动天赋！
+          </view>
+          <text class="number">已有{{test_number}}人参加本次测试</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="main_body_right">
+      <!--  -->
+      <navigator url="../point/point">
+        <view class="X_main_body_right_item1">
+        <view class="p">
+          成绩录入
+          </view>
+          <view class="span">
+           快速填写你的测试成绩!
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../Instructions/Instructions">
+        <view class="X_main_body_right_item2"style='padding-top:10rpx'>
+          <view class="p">
+          使用说明
+          </view>
+          
+          <view class="span">
+           使用前记得读一读哦
+          </view>
+        </view>
+      </navigator>
+      </view>
+  </view>
+
+  <!-- 第二部分 -->
+  <view wx:else class="main_body clearfloat">
+    <view class="main_body_left">
+      <!--  -->
+      <navigator url="{{navigator_page}}">
+        <view class="main_body_left_item1">
+          <view class="p">
+          个人资料
+          </view>
+          <view class="span">
+          了解自己的身体数据
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../newPoint/newPoint">
+        <view class="main_body_left_item2"style="padding-top:10rpx">
+          <view class="p">
+          六角星战士
+          </view>
+          <view class="span">
+          发现你的运动天赋！
+          </view>
+          <text class="number">已有{{test_number}}人参加本次测试</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="main_body_right">
+      <!--  -->
+      <navigator url="../point/point">
+        <view class="main_body_right_item1">
+        <view class="p">
+          成绩录入
+          </view>
+          <view class="span">
+           快速填写你的测试成绩!
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../Instructions/Instructions">
+        <view class="main_body_right_item2"style='padding-top:10rpx'>
+          <view class="p">
+          使用说明
+          </view>
+          
+          <view class="span">
+           使用前记得读一读哦
+          </view>
+        </view>
+      </navigator>
+      </view>
+  </view>
+</view>
+
+<!-- <view class="login" hidden='{{isHdie}}'> -->
+<!-- </view> -->
+<!-- <view class="getUserInfo" hidden='{{isHdie}}'>
+    <view class="title">微信授权</view>
+    <view class="clearfloat">
+      <image src='https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/logo.png'></image>
+      <text>迪卡侬青少年天赋测试申请获得以下权限</text>
+    </view>
+    <view style='position:relative;height:180rpx;'>
+      <view class="infoMessage"></view>
+      <view class="infoMessage_point"></view>
+      <view  class="infoMessage_text">获得你的公开信息(昵称，头像等)</view>
+    </view>
+    <view class="infoMessage_button clearfloat">
+      <button class="infoMessage_button_allow" open-type="getUserInfo" bindgetuserinfo="getUserInfo">允许</button>
+      <view class="infoMessage_button_reject" bindtap='reject'>拒绝</view>
+    </view>
+  </view> -->
+

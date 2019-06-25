@@ -1,0 +1,73 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="main_body">
+<!-- 微信头像 -->
+  <view class="userInfo">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    <view class="userinfo-city clearfloat">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" >
+          <view class="picker" style="width:250rpx;height:40rpx;float:left;margin-left:150rpx;line-height:40rpx;background-position-y:14rpx;background-position-x:240rpx;background-size: 15rpx 15rpx;color:#333;font-weight:500" >
+          {{region[1]}}\t{{region[2]}}
+          </view>
+        </picker>
+    <!-- <image style="float:left;margin-top:10rpx;" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+    </view>
+  </view>
+  <view class="main_body_background">
+  </view>
+  <view class="main_body-form clearfloat">
+    <view class="name clearfloat">
+      <text class="messageInput">姓名</text>
+      <input bindblur='inputName'></input>
+    </view>
+    <view class="sex">
+      <view class="sex_nv" value='女' bindtap='sexChooseNv' style="background:url({{sex.nv}});background-size: 65%;background-repeat: no-repeat;background-position-y: 5rpx;">
+      </view>
+      <view class="sex_nan" value='男' bindtap='sexChooseNan' style="background:url({{sex.nan}});background-size: 75%;background-repeat: no-repeat;background-position-y: 15rpx;">
+      </view>
+    </view>
+    <view class="main_body_form_info clearfloat">
+      <view class="form_info_item clearfloat">
+        <text class="messageInput">年龄</text>
+        <!-- <input bindblur='inputAge'></input> -->
+        <picker bindchange="bindPickerChange" value="{{fi_index}}"  range="{{array1}}">
+          <view class="picker">
+            {{array1[fi_index]}}
+          </view>
+        </picker>
+        <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+      <view class="form_info_item clearfloat">
+        <text class="messageInput">年级</text>
+        <!-- <input bindblur='inputGrade'></input> -->
+        <picker bindchange="bindPickerChange_2" value="{{se_index}}"  range="{{array2}}">
+          <view class="picker">
+            {{array2[se_index]}}
+          </view>
+        </picker>
+        <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+      <view class="form_info_item clearfloat">
+        <text class="messageInput">身高</text>
+        <!-- <input bindblur='inputHeight'></input> -->
+        <picker bindchange="bindPickerChange_3" value="{{tr_index}}"  range="{{array3}}">
+          <view class="picker">
+            {{array3[tr_index]}}
+          </view>
+        </picker>
+        <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+      <view class="form_info_item clearfloat">
+        <text class="messageInput">体重</text>
+        <!-- <input bindblur='inputWeight'></input> -->
+        <picker bindchange="bindPickerChange_4" value="{{fo_index}}"  range="{{array4}}">
+          <view class="picker">
+            {{array4[fo_index]}}
+          </view>
+        </picker>
+        <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/messageInput/sj.png"></image> -->
+      </view>
+    </view>
+    <view class="submit" bindtap='userlogin'>确认</view>
+  </view>
+</view>

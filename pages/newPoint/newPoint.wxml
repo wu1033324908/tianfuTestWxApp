@@ -1,0 +1,43 @@
+<!-- <view>
+  <view style='background:url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/newPoint/bj.png);'></view>
+</view> -->
+<view class="page">
+<view class="mainBody"  bindlongtap='longTouch'>
+  <canvas style="width: 430rpx; height: 430rpx;" canvas-id="myCanvas" class="myCanvas"></canvas>
+  <!-- 六边形 -->
+  <view class="Recommend clearfloat">
+    <view wx:for="{{adviceData}}" class="Recommenditem" style="margin-left:30rpx;margin-bottom:15rpx;">
+        <image src="{{item.src}}"></image>
+        <text>{{item.data}}</text>
+    </view>
+  </view>
+  <view class="footer clearfloat">
+  <view class="footer_left">
+    <text>*以上信息仅提供参考，最终解释权归迪卡侬所有</text>
+  </view >
+    <view class="footera_right">
+      <!-- <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/erweima.png"></image> -->
+      <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/erweima_logo.jpg"></image>
+    </view>
+  </view>
+</view>
+</view>
+<view style='position:fixed;left:230rpx;top:430rpx;z-index:999;border-radius:40rpx;overflow:hidden' hidden="{{ishidden}}">
+  <view class="loading" style='border-radius:40rpx;opcity:0.2'>
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/loading.gif" style='opcity:0.6'>
+    </image>
+    <text>是不是忘记输入成绩了</text>
+  </view>
+</view>
+
+<!-- //loadding -->
+<view style='position:fixed;left:230rpx;top:430rpx;z-index:999;border-radius:40rpx;overflow:hidden' hidden='{{isloadding}}'>
+  <view class="loading" style='border-radius:40rpx;opcity:0.2'>
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/loading.gif" style='opcity:0.6'>
+    </image>
+  </view>
+</view>
+
+<view hidden="{{maskHidden}}" class="mask" style="position:fixed;top 99999px;left:55rpx;">
+<canvas canvas-id="shareCanvas" class="canvas-box" style="width:750px;height:1720px;z-index:-1"></canvas>
+</view> 

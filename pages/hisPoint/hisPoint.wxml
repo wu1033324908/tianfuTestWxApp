@@ -1,0 +1,44 @@
+<view hidden="{{maskHidden}}" class="mask">
+<canvas canvas-id="shareCanvas" class="canvas-box" style="width:686rpx;height:1448rpx;position:absolute;top -15rpx;left:55rpx;z-index:-999"></canvas>
+</view> 
+
+<view class="mainBody" bindlongtap='longTouch'>
+  <image class="top" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/ljx.png"></image>
+  <view class="main_point_info">
+    <image class="speed" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/sudu.png"></image>
+    <image class="BMI" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/BMI.png"></image>
+    <image class="endurance" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/naili.png"></image>
+    <image class="Pliable" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/rouren.png"></image>
+    <image class="sensitive" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/lingmin.png"></image>
+    <image class="porwer" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/power.png"></image>
+    <!-- 主视图 -->
+    <view class="main_point_info_img"></view>
+    
+  <canvas style="width: 430rpx; height: 430rpx;" canvas-id="myCanvas" class="myCanvas"></canvas>
+  <!-- 六边形 -->
+  
+  <!-- 分享生成的图片 -->
+  </view>
+  <image class="top" src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/xbtj.png" style="padding-top:0;margin-bottom:0;"></image>
+  <!-- 项目推荐 -->
+  <scroll-view  class="Recommend clearfloat">
+    <view wx:for="{{adviceData}}" class="Recommenditem" style="margin-left:30rpx">
+        <image src="{{item.src}}"></image>
+        <text>{{item.data}}</text>
+    </view>
+    <!-- <view class="Recommenditem" style="margin-right:15rpx">
+      <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/shiyongshuoming2.png"></image>
+    </view> -->
+  </scroll-view>
+  <view class="Long_press">
+    <text style="padding-right:40rpx;">长按保存图片</text>  
+  </view>
+  <view class="footer clearfloat">
+    <view class="footera_left"> 
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/bz.png"></image>
+    </view>
+    <view class="footera_right">
+    <image src="https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/hisPoint/xcx.png"></image>
+     </view>
+  </view>
+</view>

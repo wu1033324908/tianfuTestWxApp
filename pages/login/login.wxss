@@ -1,0 +1,45 @@
+page{
+  padding: 0;
+  margin: 0;
+  background-image: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/index/bg_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-style: normal;
+  color: #fff;
+}
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+ 
+.header .logo{
+    width: 200rpx;
+    height: 200rpx;
+    margin: auto;
+    background: url(https://yiyouqi.oss-cn-shanghai.aliyuncs.com/dikanongWechar/111.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+ 
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+    font-size: 40rpx;
+}
+ 
+.content text {
+    display: block;
+    color: #fff;
+    margin-top: 40rpx;
+    font-size: 25rpx;
+}
+ 
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}
